@@ -1,0 +1,47 @@
+# Ignora arquivos de sistema operacional
+.DS_Store
+.env
+.vscode/ # Se usar VSCode e tiver arquivos de config locais
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/ # Pasta do ambiente virtual
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.manifest
+*.mo
+*.pot
+*.log
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Django specific
+*.log
+*.pot
+*.mo
+*.po
+# local_settings.py 
+db.sqlite3 # Banco de dados SQLite local (se você não usa PostgreSQL em dev)
+/static/ # Importante! Ignora a pasta 'static' gerada pelo collectstatic
+/media/ # Pasta para uploads de usuários
+
+# IDEs e Ferramentas
+.idea/ # Para PyCharm/IntelliJ
+.history/ # Vários editores criam isso
+
+# --- NOVO: IGNORA O ARQUIVO settings.py ---
